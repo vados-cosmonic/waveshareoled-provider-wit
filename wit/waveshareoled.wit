@@ -1,0 +1,11 @@
+package cosmonic:waveshareoled
+
+interface screen {
+  // Draw a message onto the screen
+  draw-message: func(msg: string) -> result<_, string>
+}
+
+world waveshareoled {
+//  import wasi:logging/logging
+  import screen
+}

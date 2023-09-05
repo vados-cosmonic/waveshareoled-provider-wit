@@ -1,0 +1,17 @@
+[package]
+name = "waveshareoled-provider-wit"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "waveshareoled-provider"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1.0.75"
+async-trait = "0.1.73"
+serde = { version = "1.0.188", features = ["derive"] }
+serde_json = "1.0.105"
+wasmcloud-provider-wit-bindgen = { path = "/Users/vados/code/cosmonic/forks/wasmCloud/crates/provider-wit-bindgen" }
+wasmcloud-provider-sdk = { path = "/Users/vados/code/cosmonic/forks/wasmCloud/crates/provider-sdk" }
+wasmcloud-core = { path = "/Users/vados/code/cosmonic/forks/wasmCloud/crates/core" }
