@@ -10,7 +10,8 @@ wasmcloud_provider_wit_bindgen::generate!(
 );
 
 /// Implementation struct for Waveshare OLED provider
-struct WaveshareOledProvider;
+#[derive(Debug, Clone)]
+pub struct WaveshareOledProvider;
 
 #[async_trait]
 impl WasmcloudCapabilityProvider for WaveshareOledProvider {
